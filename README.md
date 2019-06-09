@@ -1,6 +1,4 @@
 # CleaningData_ProgrammingAssignment
-Contains codeBook and run_analysis.R files required for assignment submission
-
 This file provides instructions on how to run analysis on Human Activity Recognition Using Smartphones Data Set prepared by UCI.
 
 Dataset
