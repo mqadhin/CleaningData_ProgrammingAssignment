@@ -1,10 +1,7 @@
 ##Download data file to desktop
-if (!exists("./data")) {
-    dir.create("./data")
-}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl, destfile = "./data/UCI-HAR-dataset.zip", method = "curl")
-unzip("./data/UCI-HAR-dataset.zip")
+download.file(fileUrl, destfile = "./UCI-HAR-dataset.zip", method = "curl")
+unzip("./UCI-HAR-dataset.zip")
 
 
 ##Merge training and test sets to create one data set
