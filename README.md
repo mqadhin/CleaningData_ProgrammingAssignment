@@ -6,6 +6,7 @@ Human Activity Recognition Using Smartphones<br/>
 <br/>
 **Files**<br/>
 **codeBook.md**: A code book that describes the variables, data and any transformations or work that performed to clean up the data<br/>
+
 **run_analysis.R**: downloads and cleans data as required by assignment<br/>
 1. Merges the training and the test sets to create one data set.
 1. Extracts only the measurements on the mean and standard deviation for each measurement.
