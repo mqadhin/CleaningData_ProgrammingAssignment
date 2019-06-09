@@ -1,7 +1,9 @@
 # CleaningData_ProgrammingAssignment
 This file provides instructions on how to run analysis on Human Activity Recognition Using Smartphones Data Set prepared by UCI.<br/>
+<br/>
 Dataset<br/>
 Human Activity Recognition Using Smartphones<br/>
+<br/>
 Files<br/>
 codeBook.md: A code book that describes the variables, data and any transformations or work that performed to clean up the data
 run_analysis.R: downloads and cleans data as required by assignment<br/>
