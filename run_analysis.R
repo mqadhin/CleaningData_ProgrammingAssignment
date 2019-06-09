@@ -57,4 +57,4 @@ colnames(dataLean) <- colNamed
 dataTidy <- dataLean %>%
   group_by(activity, subject) %>%
   summarise_all(mean, na.rm = TRUE)
-write.table(dataTidy, file = "./data/dataTidy.txt", row.names = FALSE)
+write.table(dataTidy, file = "./dataTidy.txt", row.names = FALSE)
