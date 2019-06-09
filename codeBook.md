@@ -7,21 +7,21 @@ The run_analysis.R script retrieves and cleans data from the Human Activity Reco
 <br/>
 **Data and variables**<br/>
 1. features <- features.txt: 561 observations, 2 variables  
-  * Set of features calculated from accelerometer and gyroscope 3-axial raw signal measurements.
+   1. Set of features calculated from accelerometer and gyroscope 3-axial raw signal measurements.
 1. activities <- activity_labels.txt : 6 observations, 2 variables  
-  * Links class labels with their activity name.
+   1. Links class labels with their activity name.
 1. subjectTest <- test/subject_test.txt: 2947 observations, 1 variable  
-  * Each row identifies the subject who performed the activity for each test sample. 9 of 30 subjects tested.
+   1. Each row identifies the subject who performed the activity for each test sample. 9 of 30 subjects tested.
 1. xTest <- test/X_test.txt : 2947 observations, 561 variables  
-  * Contains test data on the 561 measurements for accelerometer and gyroscope.
+   1. Contains test data on the 561 measurements for accelerometer and gyroscope.
 1. yTest <- test/y_test.txt : 2947 observations, 1 variable  
-  * Contains class labels for test data.
+   1. Contains class labels for test data.
 1. subjectTrain <- test/subject_train.txt : 7352 observations, 1 variable  
-  * Each row identifies the subject who performed the activity for each training sample. 21 of 30 subjects tested.
+   1. Each row identifies the subject who performed the activity for each training sample. 21 of 30 subjects tested.
 1. xTrain <- test/X_train.txt : 7352 observations, 561 variables  
-  * Contains training data on the 561 measurements for accelerometer and gyroscope.
+   1. Contains training data on the 561 measurements for accelerometer and gyroscope.
 1. yTrain <- test/y_train.txt : 7352 observations, 1 variable  
-  * Contains class labels for training data.
+   1. Contains class labels for training data.
 <br/>
 **Merge training and test sets to create one data set**<br/>
 1. x uses rbind() to merge xTrain and xTest. Data frame of 10299 observations and 561 variables created.
