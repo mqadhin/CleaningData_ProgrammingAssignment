@@ -23,7 +23,7 @@ The run_analysis.R script retrieves and cleans data from the Human Activity Reco
 1. yTrain <- test/y_train.txt : 7352 observations, 1 variable  
    1. Contains class labels for training data.
 <br/>
-**Merge training and test sets to create one data set**<br/>
+**Merge training and test sets to create one data set**:<br/>
 1. x uses rbind() to merge xTrain and xTest. Data frame of 10299 observations and 561 variables created.
 1. y uses rbind() to merge yTrain and yTest. Data frame of 10299 observations and 1 variable created.
 1. subjects uses rbind() to merge subjectTrain and subjectTest. Data frame of 10299 observations and 1 variable created.
