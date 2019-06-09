@@ -5,7 +5,8 @@ The run_analysis.R script retrieves and cleans data from the Human Activity Reco
   3.	Uses descriptive activity names to name the activities in the data set
   4.	Appropriately labels the data set with descriptive variable names.
   5.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and         each subject.  
-  
+
+
 Data and variables  
   1.	features <- features.txt: 561 observations, 2 variables  
       Set of features calculated from accelerometer and gyroscope 3-axial raw signal measurements.
@@ -23,20 +24,24 @@ Data and variables
       Contains training data on the 561 measurements for accelerometer and gyroscope.
   8.	yTrain <- test/y_train.txt : 7352 observations, 1 variable
       Contains class labels for training data.
-  
+
+
 Merge training and test sets to create one data set  
   1.	x uses rbind() to merge xTrain and xTest. Data frame of 10299 observations and 561 variables created.
   2.	y uses rbind() to merge yTrain and yTest. Data frame of 10299 observations and 1 variable created.
   3.	subjects uses rbind() to merge subjectTrain and subjectTest. Data frame of 10299 observations and 1 variable created.
   4.	data uses cbind() to merge x, y and subjects. Data frame of 10299 observations and 563 variables created.
 
+
 Extract measurements on the mean and standard deviation  
   1.	dataLean uses as_tibble() and select() to convert data to tibble class and to extract measurements of mean and standard deviation,       respectively. Tibble of 10299 observations and 68 variables created.
   2.	Only arithmetic mean variables are extracted, hence this dataset excludes meanFreq as it calculates weighted average and angle           variables.
-  
+
+
 Use descriptive activity names for activities  
   1.	activity column in dataLean is given descriptive names adopted from activities table through sub setting.
-  
+
+
 Use descriptive variable names  
   1.	t in column names substituted with time.
   2.	f in column names substituted with frequency.
@@ -46,7 +51,8 @@ Use descriptive variable names
   6.	BodyBody in column names substituted with Body.
   7.	mean in column names substituted with Mean.
   8.	std in column names substituted with Std.
-  
+
+
 Create independent data set which averages each variable for each activity and subject  
   1.	dataTidy uses group_by() to group data by activity and subject.
   2.	dataTidy uses summarise_all() to calculate the mean of each variable by activity and subject. Tibble of 180 observations and 68         variables created.
