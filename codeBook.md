@@ -5,7 +5,7 @@ The run_analysis.R script retrieves and cleans data from the Human Activity Reco
 1. Appropriately labels the data set with descriptive variable names.
 1. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 <br/>
-**Data and variables**<br/>
+** Data and variables **<br/>
 1. **features** <- features.txt: 561 observations, 2 variables 
    - Set of features calculated from accelerometer and gyroscope 3-axial raw signal measurements.
 1. **activities** <- activity_labels.txt : 6 observations, 2 variables
